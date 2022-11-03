@@ -1,0 +1,18 @@
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title>Vowel Count</title>
+</head>
+<body>
+  <script>
+    function countVowel(str) {
+      let check = str.match(/[aeiou]/gi);
+      let count = check.length;
+      return count;
+    }
+    let string = prompt('Enter a string: ');
+    let result = countVowel(string);
+    alert("Count of vowels is :" + result);
+  </script>
+</body>
+</html>
